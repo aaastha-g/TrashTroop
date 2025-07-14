@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #033b35;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    padding-top: 5%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #93d3a5, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+      0px 0px 20px #93d3a5;
+}
+
+/* Form Styles */
+/* Form Styles */
+form {
+    background-color: #004a36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: #ffffff;
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #fff;
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ffffff;
+}
+
+th {
+    background-color: #008344;
+    border-color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #1c3f2e;
+}
+tr:nth-child(odd) {
+    background-color: #142b20;
+}
+
+tr:hover {
+    background-color: #113f00;
+}
+
+/* Button Styles */
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #c63636;
+}
+
+/* Success Message */
+.success {
+    text-align: center;
+    color: #c63636;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.accept-btn {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.accept-btn::after {
+    content: '\2714'; /* Unicode for checkmark symbol */
+    margin-left: 5px;
+}
+
+.reject-btn {
+    background-color: #FF6347; /* Red color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.reject-btn::after {
+    content: '\2716'; /* Unicode for cross symbol */
+    margin-left: 5px;
+}
